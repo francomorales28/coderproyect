@@ -1,0 +1,47 @@
+    /* Reset CSS de Eric Meyer (versión reducida) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+    /* Fin Reset CSS de Eric Meyer (versión reducida) */
+
+
+.links-top{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    padding: 20px;
+    height: 100px;
+}
+
+
+.links-top li{
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 300px 200px;
+    justify-items: center;
+    align-items: center;
+}
