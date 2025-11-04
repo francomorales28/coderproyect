@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portraits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
@@ -12,23 +14,39 @@
     <!--Header Section-->
     <header>
 
-        <!--Search section-->
-        <nav>
-            <form for="search" method="">
-                <label for="search">Search:</label>
-                <input type="search" name="search" id="search">
-            </form>
-        </nav>
-
         <!--Nav menu-->
-        <nav>
-            <ul class="links-top">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./portfolio.html">Portfolio</a> </li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./portfolio.html">Franco Morales PH</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" href="./portfolio.html"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active" aria-current="page"
+                                        href="./portraits.html">Portraits</a></li>
+                                <li><a class="dropdown-item" href="./events.html">Events</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
         <section class="volver">
             <a href="./portfolio.html">Volver</a>
         </section>
@@ -38,8 +56,39 @@
     </header>
 
     <!--Main Section-->
-    <img src="../assets/Sketch.png" alt="carrusel">
-
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/Guille6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/Nahuel.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/Pato.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
     <!--Footer-->
     <footer>
         <nav class="links-footer">
@@ -60,6 +109,9 @@
         </nav>
         <img src="../assets/fotoperfil.jpg" alt="footerimg">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
