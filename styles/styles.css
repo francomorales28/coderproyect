@@ -130,3 +130,20 @@ a:hover {
 }
 
 /* Footer */
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "links"
+      "social"
+      "copy";
+    text-align: center;
+  }
+  .footerimg {
+    margin: 0 auto;
+    width: 50%;
+  }
