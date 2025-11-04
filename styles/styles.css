@@ -1,4 +1,6 @@
-    /* Reset CSS de Eric Meyer (versión reducida) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Reset CSS */
 
 * {
   margin: 0;
@@ -6,42 +8,125 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
-  font: inherit;
+
+/* Reset CSS */
+
+/* Body */
+body {
+  background-color: #1b1b1b;
+}
+/* Body */
+
+/* Header */
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
 }
 
-    /* Fin Reset CSS de Eric Meyer (versión reducida) */
-
-
-.links-top{
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
-    background-color: bisque;
-    padding: 20px;
-    height: 100px;
+.volver {
+  align-self: flex-start;
+  padding: 20px;
 }
 
+/* Header */
 
-.links-top li{
-    background-color: aquamarine;
-    padding: 10px;
+/* Main Section */
+
+main {
+  padding: 20px;
+  color: white;
+  background-color: #1b1b1b;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 300px 200px;
-    justify-items: center;
-    align-items: center;
+.about-me {
+  margin-top: 20px;
 }
+/* Main Section */
+
+/* Footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 150px;
+  grid-template-rows: auto 40px;
+  grid-template-areas:
+    "links social image"
+    "copy  copy   copy";
+  gap: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  align-items: center;
+}
+
+.nav-footer {
+  grid-area: links;
+}
+
+.social {
+  grid-area: social;
+}
+
+.footerimg {
+  grid-area: image;
+  width: 100%;
+}
+
+.footerimg:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.copy {
+  grid-area: copy;
+  text-align: center;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.links-footer li,
+.links-redes li {
+  margin-bottom: 5px;
+}
+
+.social p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Footer */
