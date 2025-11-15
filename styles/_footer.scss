@@ -1,0 +1,54 @@
+@mixin footer-styles {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: grid;
+    grid-template-areas: 
+        'links'
+        'social'
+        'image'
+        'credit';
+    gap: 10px;
+
+    .nav-footer {
+        grid-area: links;
+    }
+    
+    .social{
+        grid-area: social;
+    }
+
+    .footerimg {
+        grid-area: image;
+    }
+
+    .copy{
+        grid-area: credit;
+        font-size: 0.8em;
+    }
+
+    a {
+        color: #dcc363;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footerimg {
+        width: 150px;
+        height: auto;
+    }
+}
+
+.footer {
+    @include footer-styles;
+}

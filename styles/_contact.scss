@@ -1,0 +1,13 @@
+@use 'mixin';
+
+.contact-main {
+   @include mixin.background-image;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+
+}
+
+.mb-3 {
+    background-color: #31313154;
+}

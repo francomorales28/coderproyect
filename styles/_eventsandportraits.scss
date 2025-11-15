@@ -1,0 +1,17 @@
+@use 'mixin';
+
+.contact-main {
+   @include mixin.background-image;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+
+}
+
+.back-button a {
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+

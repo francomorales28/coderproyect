@@ -1,0 +1,30 @@
+@use 'mixin';
+
+.home-main {
+   @include mixin.background-image;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.franco-picture {
+    text-align: center;
+    margin: 20px 0;
+
+    img {
+        width: 400px;
+        height: auto;
+        border-radius: 20%;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #e4e4e4;
+}

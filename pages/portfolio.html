@@ -13,10 +13,11 @@
 <body>
     <!--Header Section-->
     <header>
+
         <!--Nav menu-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./portfolio.html">Franco Morales PH</a>
+                <a class="navbar-brand" href="#">Franco Morales PH</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -25,15 +26,15 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" aria-current="page" href="./portfolio.html"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Portfolio
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./portraits.html">Portraits</a></li>
@@ -44,31 +45,33 @@
                 </div>
             </div>
         </nav>
-
     </header>
-
     <!--Main Section-->
-    <main class="porfolio-section">
-        <h1>Portfolio</h1>
+    <main class="portfolio-section">
+        <h1 class="portfolio-title">Portfolio</h1>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
                 <div class="card">
-                    <img src="../assets/Guille6.png" class="card-img-top" alt="portraits">
-                    <div class="card-body">
-                        <h5 class="card-title">Portraits</h5>
-                        <p class="card-text"> Here you can see some of my best portrait work.</p>
-                    </div>
+                    <a href="./portraits.html">
+                        <img src="../assets/Guille6.png" class="card-img-top" alt="portraits">
+                        <div class="card-body">
+                            <h5 class="card-title">Portraits</h5>
+                            <p class="card-text"> Here you can see some of my best portrait work.</p>
+                    </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
+        </div>
+        <div class="col">
+            <div class="card">
+                <a href="./events.html">
                     <img src="../assets/Casados.png" class="card-img-top" alt="events">
                     <div class="card-body">
                         <h5 class="card-title">Events</h5>
                         <p class="card-text">Here you can see some of my best event work.</p>
-                    </div>
-                </div>
+                </a>
             </div>
+        </div>
+        </div>
         </div>
     </main>
 
