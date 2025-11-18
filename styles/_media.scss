@@ -1,7 +1,32 @@
+@use 'mixin';
 
-@media (min-width:768px) {
-    .footer{
-        display: grid;
-         
+/* Big Mobile */
+@media (min-width: 576px) {}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .footer {
+        @include mixin.footer-media-styles;
+    }
+}
+/* Laptop */
+@media (min-width: 992px) {
+    .footer {
+        @include mixin.footer-media-styles;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "links social image credit";
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+     .footer {
+        @include mixin.footer-media-styles;
+        align-items: center;
+        justify-content: space-around;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "links social image credit";
     }
 }

@@ -1,8 +1,45 @@
 @mixin background-image {
     background-image: linear-gradient(#00000091, #00000088), url('../assets/camera.jpg');
+
     background: {
         size: cover;
         position: center;
         repeat: no-repeat;
     }
-};
+}
+
+;
+
+
+@mixin footer-media-styles {
+    display: grid;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    grid-template-areas:
+        "links social"
+        "image image"
+        "credit credit";
+    
+
+    .nav-footer {
+        grid-area: links;
+    }
+
+    .social {
+        grid-area: social;
+    }
+
+    .footerimg {
+        grid-area: image;
+        &:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .copy {
+        grid-area: credit;
+        font-size: 0.8em;
+    }
+
+}
