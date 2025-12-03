@@ -16,6 +16,7 @@
 }
 .footer .footerimg {
   grid-area: image;
+  border-radius: 50%;
 }
 .footer .copy {
   grid-area: credit;
@@ -39,7 +40,7 @@
 }
 
 .home-main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.5333333333)), url("../assets/camera.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3764705882), rgba(0, 0, 0, 0.7725490196)), url("../assets/camera.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +71,7 @@
 }
 
 .contact-main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.5333333333)), url("../assets/camera.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3764705882), rgba(0, 0, 0, 0.7725490196)), url("../assets/camera.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -81,10 +82,12 @@
 
 .mb-3 {
   background-color: rgba(49, 49, 49, 0.3294117647);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .contact-main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.5333333333)), url("../assets/camera.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3764705882), rgba(0, 0, 0, 0.7725490196)), url("../assets/camera.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,8 +103,23 @@
   margin-left: 20px;
 }
 
+#carouselExampleIndicators {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3764705882), rgba(0, 0, 0, 0.7725490196)), url("../assets/camera.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+}
+
 .portfolio-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.5333333333)), url("../assets/camera.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3764705882), rgba(0, 0, 0, 0.7725490196)), url("../assets/camera.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

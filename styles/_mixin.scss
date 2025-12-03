@@ -1,6 +1,5 @@
 @mixin background-image {
-    background-image: linear-gradient(#00000091, #00000088), url('../assets/camera.jpg');
-
+    background-image: linear-gradient(#00000060, #000000c5), url('../assets/camera.jpg');
     background: {
         size: cover;
         position: center;
